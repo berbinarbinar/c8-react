@@ -1,21 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Navbar } from './components/Navbar';
+import { Home } from './pages/Home';
+import { Produk } from './pages/Produk';
+import { Tentang } from './pages/Tentang';
+
+import { Routes, Route } from 'react-router-dom'
+import { Swiper } from './pages/Swiper';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> ini React </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tentang" element={<Tentang />} />
+        <Route path="/produk" element={<Produk />} />
+        <Route path="/flicking" element={<Swiper />} />
+      </Routes>
     </div>
   );
 }

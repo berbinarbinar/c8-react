@@ -115,3 +115,5 @@ Untuk ngerjain challenge 8 ini caranya gampang abiez
 
    export default
    ```
+
+4. Untuk membuat halaman di React (Pages), kita harus implementasi yang namanya Routing, kenapa harus demikian, kalau misalkan dulu pas challenge sebelumnya, kita hanya sesimple membuat file ejs baru setiap kali kita membuat halaman, dan yang melakukan proses pengambilan halaman itu sendiri itu terjadi di server express
