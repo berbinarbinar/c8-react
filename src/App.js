@@ -6,6 +6,8 @@ import { Tentang } from './pages/Tentang';
 
 import { Routes, Route } from 'react-router-dom'
 import { Swiper } from './pages/Swiper';
+import { Counter } from './pages/Counter';
+
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/tentang" element={<Tentang />} />
         <Route path="/produk" element={<Produk />} />
         <Route path="/flicking" element={<Swiper />} />
+        <Route path="/counter" element={<Counter />} />
+
       </Routes>
     </div>
   );

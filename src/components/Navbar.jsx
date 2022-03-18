@@ -8,6 +8,7 @@ export function Navbar() {
       <Link to='/tentang'>tentang</Link>
       <Link to='/produk'>produk</Link>
       <Link to='/flicking'>Flicking</Link>
+      <Link to='/counter'>counter</Link>
     </nav>
   );
 }
