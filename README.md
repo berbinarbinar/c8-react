@@ -14,6 +14,8 @@ Untuk ngerjain challenge 8 ini caranya gampang abiez
 ## React
 
 1. Dynamic Value
+   untuk menampilkan data pada html element ketika memakai ejs, kita haruslah menggunakan syntax kurang lebih seperti ini
+   `<%= data %>` nah kalau untuk memunculkan data di react cukup dengan menggunakan curly brace aja alias kurung kumis `{}` dimana kamu juga bisa melakukan logical operator didalam situ, apabila kamu ingin looping sebuah array gunakan seperti array.map, apabila kamu ingin mengecek kondisi, kamu bisa menggunakan `ternary operator`
 2. Component (memecah belah menjadi fragmen fragmen html yang lebih kecil, biasa digunakan untuk grouping atau juga membuat sesuatu yang bisa dipakai berulang (reusable component))
    a. cara bikin komponen gak susah, tinggal bikin sebuah function yang punya nama, dimana nama function tadi haruslah Diawali dengan Huruf Besar contoh
 
