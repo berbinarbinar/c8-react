@@ -1,3 +1,15 @@
+import { useState } from 'react';
+import dataTodo from '../data/todo.json';
 export default function Todos() {
-  return <h1>Ini dari todos</h1>;
+  const [todo, setTodo] = useState(dataTodo);
+  return (
+    <>
+      <h1 style={{ textAlign: 'center' }}>List todos</h1>
+      <ul>
+        {todo.map((e) => {
+          return <li key={e.id}>{e.task} </li>;
+        })}
+      </ul>
+    </>
+  );
 }
