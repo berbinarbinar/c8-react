@@ -7,10 +7,7 @@ export default function Todos() {
 
   const addTodo = (userInput) => {
     let copy = [...todo];
-    copy = [
-      ...copy,
-      { id: dataTodo.length + 1, task: userInput, complete: false },
-    ];
+    copy = [...copy, { id: todo.length + 1, task: userInput, complete: false }];
     setTodo(copy);
   };
 
@@ -20,7 +17,15 @@ export default function Todos() {
       <TodoForm addTodo={addTodo} />
       <ul>
         {todo.map((e, index) => {
-          return <li key={index}>{e.task} </li>;
+          return (
+            <li
+              onClick={() => console.log(e.id)}
+              className={e.complete ? 'strike' : ''}
+              key={index}
+            >
+              {e.task}{' '}
+            </li>
+          );
         })}
       </ul>
     </>
