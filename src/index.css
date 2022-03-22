@@ -2,6 +2,11 @@
 
 body {
   font-family: "Fredoka";
+  text-align: center;
+}
+
+form {
+  display: inline-block;
 }
 
 nav {
@@ -19,4 +24,8 @@ nav a {
   text-decoration: none;
   color: crimson;
   font-size: 20px;
+}
+
+li {
+  list-style: none;
 }
