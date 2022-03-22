@@ -12,6 +12,14 @@ export default function Todos() {
     setTodo(mappedTodo);
   };
 
+  const clearCompletedTodo = () => {
+    let filteredTodo = todo.filter((t) => {
+      // balikin todo dimana todo.completed = false alias todonya masih belom kelar
+      return !t.complete;
+    });
+    setTodo(filteredTodo);
+  };
+
   const addTodo = (userInput) => {
     let copy = [...todo];
     copy = [...copy, { id: todo.length + 1, task: userInput, complete: false }];
@@ -37,6 +45,7 @@ export default function Todos() {
           );
         })}
       </ul>
+      <button onClick={() => clearCompletedTodo()}>clear completed</button>
     </>
   );
 }
